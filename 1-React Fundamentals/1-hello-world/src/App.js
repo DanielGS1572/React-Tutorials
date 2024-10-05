@@ -20,6 +20,12 @@ create-react-app <project-name>
 npm start
 si se descargó, primero sería npm install
 
+React es una libreria que se basa en componentes
+
+Components:
+- Describen una parte de la UI
+- Son reutilizables y pueden estar anidados en otros components
+
 
 ##########################################################################################################
           Folder structure -> https://www.youtube.com/watch?v=9VIiLJL0H4Y&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=3
@@ -27,10 +33,39 @@ si se descargó, primero sería npm install
 package.json (si se usara yarn se vería yarn-lock)
 - Contiene dependencias y scripts
 
-El archivo de /public/manifest.json se hace uso para Progressive Web Apps
+El archivo de /public/manifest.json se hace uso para Progressive Web Apps (al igual que registerServiceWorker.js se usa para SPA)
 /public/index.html es el unico html que existe en el proyecto (ya que trabaja con Single Page Application y la entrada es el tag de div con id="root")
+index.js es quien hace la inyección de los cambios en el DOM
+
+
+
+##########################################################################################################
+          Components -> https://www.youtube.com/watch?v=Y2hgEGPzTZY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=4
+##########################################################################################################
+Cada componente es un archivo de js (ver que App.js es el componente principal)
+Hay componentes que pueden tener la extensión jsx, pero este curso solo se vera con extensión .js
+Hay 2 tipos de componentes:
+- Functional Component
+- Class Component
+
+
+- Stateless Functional Component
+Basicamente son funciones de js con jsx (html) que describen la ui 
+
+function Welcom(props){
+  return <h1>Hello,{props.name}</h1>
+}
+
+- Stateful Class Component
+ES6 classes que extienden de Component Class (Libreria de React)
+Tienen un metodo render() que regresan un jsx (html)
+
+
+
 */
-class App extends Component {
+
+//ver que es un class component y no un functional component
+class App extends Component {     //React.Component
   render() {
     return (
       <div className="App">
