@@ -6,8 +6,10 @@ import React from 'react'   //siempre se tiene que importar React
 
 //[A]
 /*export*/ const Greet = props => {    //la convención es usar arrow function
-  return (
-    <div>
+  console.log('hola') //ver que este código de JS esta antes del return
+  //props.name = 'Some name';   //Como props es inmutable, esto tirará un error
+  return (    //si es solo un tag de jsx no requiere de parentesis
+    <div> {/*solo se puede regresar un solo html tag por lo que props.children no puede quedar fuera del div ó más bien se tiene que agregar el div para englobar props.childre */}
       <h1>
         Hello {props.name} a.k.a {props.heroName}
       </h1>

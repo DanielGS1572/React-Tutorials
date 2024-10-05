@@ -38,12 +38,61 @@ Logica compleja en la UI
 Tambien conocidos como Stateful/smart/container (components)
 
 ##########################################################################################################
-          Hooks Update -> https://www.youtube.com/watch?v=lnV34uLEzis&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=7
+          Hooks Update -> https://www.youtube.com/watch?v=oecI26cWqzk&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=7
 ##########################################################################################################
 Archivo: None
 A partir de la versión 16.7.0
 Hooks se pueden usar tanto para Functional Components como Class Components [A]
 Antes de la introducción de Hooks es importante entender lo que es state, event binding y lifecycle hooks (tambien comprensión del uso de this)
+
+##########################################################################################################
+          JSX -> https://www.youtube.com/watch?v=7fPXI_MnBOY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=8
+##########################################################################################################
+Archivo: Hello.js
+JSX Javascript xml
+JSX no se requiere para escribir aplicaciones react
+jsx es transpilado a js
+
+##########################################################################################################
+          Props -> https://www.youtube.com/watch?v=7fPXI_MnBOY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=9
+##########################################################################################################
+Archivo: Greet.js
+Para cachar el property es props.name
+para children elements props.children
+
+<Greet name="Clark" heroName="Superman">
+          <button>Action</button>
+</Greet>
+
+Archivo: Welcome.js
+En class components se manejan como properties en class invocation, ver que se usa this.props.name
+
+##########################################################################################################
+          Component State -> https://www.youtube.com/watch?v=4ORZ1GmjaMc&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=10
+##########################################################################################################
+Archivo: Message.js
+Props vs State
+Props:
+- props gets passed to the component
+- props are immutable
+
+State:
+- Is managed within the component
+- State can be changed
+
+useState hook -> Functional Components
+this.state    -> Class Components  (versiones viejitas de react)
+
+##########################################################################################################
+          setState -> https://www.youtube.com/watch?v=4ORZ1GmjaMc&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=11
+##########################################################################################################
+Archivo: Counter.js
+Se verán los Do's and Dont's
+* Se instaló la extensión ES7+ React/Redux/React-Native snippets *
+con la extensión instalada teclear rce para crear un Class Component
+
+Dont's
+- Nunca modificar el state de forma directa - Solo cuando se inicializa en el constructor (usar setState)
 */
 
 
@@ -53,6 +102,8 @@ class App extends Component {
     return (
       <div className="App">
         <br />
+        <Counter />
+
         {/* <Hello />
         <Greet name="Bruce" heroName="Batman">
           <p>This is children props</p>

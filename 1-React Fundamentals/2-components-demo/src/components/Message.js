@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 
 class Message extends Component {
-
+//!! Se inicializa el estado en el constructor
   constructor(props) {
-    super(props)
+    super(props)          //se tiene que llamar super del padre que hace extends -> Components
     this.state = {
-      message: props.message
+      message: props.message    //como props es inmutable se tiene que pasar al state
     }
   }
 
   changeMessage() {
     this.setState({
-      message: 'Thank you for subscribing!'
+      message: 'Thank you for subscribing!'   //ver como no se usa this.message 
+      //porque en realidad es this.state.message pero es manejado internamente por react
     })
   }
 

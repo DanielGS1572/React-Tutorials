@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 
 class Welcome extends Component {
   render() {
-    return <h1>Welcome {this.props.name} a.k.a {this.props.heroName}</h1>
+    return <h1>Welcome {this.props.name} a.k.a {this.props.heroName}</h1>   
+    //props es palabra reservada para class components
+    //props es inmutable, es decir su valor no puede cambiar
   }
 }
 
