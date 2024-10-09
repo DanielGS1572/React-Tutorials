@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
 import Greet from './components/Greet'
+import Greet2 from './components/Greet2'
 import Welcome from './components/Welcome'
+import Welcome2 from './components/Welcome2'
 import Hello from './components/Hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
@@ -95,9 +97,23 @@ Dont's
 - Nunca modificar el state de forma directa - Solo cuando se inicializa en el constructor (usar setState)
 
 ##########################################################################################################
-          Destructuring props and state -> https://www.youtube.com/watch?v=5_PdMS9CLLI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=12
+      Destructuring props and state -> https://www.youtube.com/watch?v=5_PdMS9CLLI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=12
 ##########################################################################################################
-Archivo:
+Archivo: Greet2 y Welcome2
+*Tomar en cuenta que en class component (Welcome2), los props se hace destructuring dentro del metodo de render
+destructuring de estados en un class component se hace de la misma manera que props
+
+##########################################################################################################
+          Event Handling -> https://www.youtube.com/watch?v=Znqv84xi8Vs&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=13
+##########################################################################################################
+Archivos: 
+- FunctionClick.js
+- ClassClick.js
+
+##########################################################################################################
+          Binding Event Handlers -> https://www.youtube.com/watch?v=kVWpBtRjkCk&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=14
+##########################################################################################################
+
 */
 
 
@@ -107,7 +123,7 @@ class App extends Component {
     return (
       <div className="App">
         <br />
-        <Counter />
+        <Welcome2 name="Bruce" heroName="Batman" />
 
         {/* <Hello />
         <Greet name="Bruce" heroName="Batman">
