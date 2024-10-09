@@ -93,6 +93,11 @@ con la extensión instalada teclear rce para crear un Class Component
 
 Dont's
 - Nunca modificar el state de forma directa - Solo cuando se inicializa en el constructor (usar setState)
+
+##########################################################################################################
+          Destructuring props and state -> https://www.youtube.com/watch?v=5_PdMS9CLLI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=12
+##########################################################################################################
+Archivo:
 */
 
 
