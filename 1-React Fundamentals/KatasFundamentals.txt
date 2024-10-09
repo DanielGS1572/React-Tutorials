@@ -50,7 +50,7 @@ Archivo: /src/components/Welcome.js
 #######################################
 K6-1
 1.- A partir de que versión se introdujó los hooks y en cual de los dos tipos de componentes se puede usar
-2.- 3 conceptos importantes a entender antes de la introducción de hooks
+2.- 2 conceptos importantes a entender antes de la introducción de hooks
 K6-2
 1.- Que significa JSX y escribir un componente que no use JSX 
 2.- Que sucede al trabajar con JSX, es requerido trabajar con JSX en react?
