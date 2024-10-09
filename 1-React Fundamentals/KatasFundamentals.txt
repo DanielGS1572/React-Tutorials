@@ -1,0 +1,66 @@
+#######################################
+                Kata1
+#######################################
+Fuente: 1-hello-world > src > App.js
+1.- Que es package runner?
+2.- Cuales son las dos formas de crear un proyecto de react?
+3.- Pasos para ejecutar el proyecto (cuando se crea de 0, cuando se descarga de otro proyecto)
+4.- Que es React
+5.- Caracteristicas de un componente
+
+#######################################
+                Kata2
+#######################################
+Fuente: 1-hello-world > src > App.js
+1.- Aparte de npm que otro manejador de paquetes se puede usar y como se vería diferente el proyecto con respecto a esto
+2.- Para que sirve manifest.json y que otro archivo se puede usar para el mismo proposito que manifest.json
+3.- Que archivo y con que id es la ruta de entrada para hacer render de la aplicación (y donde esta ubicado)
+4.- Que archivo es el que hace la inyección
+
+#######################################
+                Kata3
+#######################################
+Fuente: 1-hello-world > src > App.js
+1.- Cuales son las dos extensiones que puede tener un componente
+2.- Cuales son los dos tipos de componentes y de que otra manera se pueden referenciar a dichos componentes
+3.- Cual es el componente que tiene que extender de otra clase (y cual es dicha clase)
+
+
+#######################################
+                Kata4
+#######################################
+Fuente: 2-components-demo > src > App.js
+Archivo: /src/components/Greet.js
+1.- Cual es la convención con respecto a las funciones
+2.- Crear un functional component que reciba props y un hijo (que muestre un texto y un boton por ejemplo)
+3.- Dos formas en las que se puede hacer export (y de que manera se importarían)
+4.- Cual es la caracteristica de los props, que pasa si se intenta modificar directamente
+
+#######################################
+                Kata5
+#######################################
+Fuente: 2-components-demo > src > App.js
+Archivo: /src/components/Welcome.js
+- De los dos tipos de componentes, cual es el que manejaba estados (antes de hooks)
+- Cual de los dos tipos de componentes no hace uso de 'this'
+- Hacer un class component extendiendo de Component (que es lo que se tiene que implementar)
+
+#######################################
+                Kata6
+#######################################
+K6-1
+1.- A partir de que versión se introdujó los hooks y en cual de los dos tipos de componentes se puede usar
+2.- 3 conceptos importantes a entender antes de la introducción de hooks
+K6-2
+1.- Que significa JSX y escribir un componente que no use JSX 
+2.- Que sucede al trabajar con JSX, es requerido trabajar con JSX en react?
+K6-3
+1.- Contrastar como se trabaja con props en class y functional components
+K6-4
+1.- Contrastar dos caracteristicas de props y state
+2.- como se trabaja con el state con Hooks y como se trabajaba el estado en versiones viejas en un class component
+
+#######################################
+                Kata7
+#######################################
+Pendiente

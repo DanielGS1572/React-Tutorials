@@ -14,16 +14,16 @@ import NameList from './components/NameList'
 
 /*
 ##########################################################################################################
-          Functional Components -> https://www.youtube.com/watch?v=Y2hgEGPzTZY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=5
+K4          Functional Components -> https://www.youtube.com/watch?v=Y2hgEGPzTZY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=5
 ##########################################################################################################
 Archivo: /src/components/Greet.js
 
 
 ##########################################################################################################
-          Class Components -> https://www.youtube.com/watch?v=lnV34uLEzis&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=6
+K5          Class Components -> https://www.youtube.com/watch?v=lnV34uLEzis&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=6
 ##########################################################################################################
 Archivo: /src/components/Welcome.js
-Class components aparte de poder recibir props así como Functional Components manejan un estado (manejar información)
+[Antes de la introducción de Hooks] Class components aparte de poder recibir props así como Functional Components manejan un estado (manejar información)
 
 [Ignorar [A]] Siempre es ideal trabajar con Functional Components
 Ventajas de Functional Components
@@ -38,7 +38,7 @@ Logica compleja en la UI
 Tambien conocidos como Stateful/smart/container (components)
 
 ##########################################################################################################
-          Hooks Update -> https://www.youtube.com/watch?v=oecI26cWqzk&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=7
+K6-1          Hooks Update -> https://www.youtube.com/watch?v=oecI26cWqzk&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=7
 ##########################################################################################################
 Archivo: None
 A partir de la versión 16.7.0
@@ -46,7 +46,7 @@ Hooks se pueden usar tanto para Functional Components como Class Components [A]
 Antes de la introducción de Hooks es importante entender lo que es state, event binding y lifecycle hooks (tambien comprensión del uso de this)
 
 ##########################################################################################################
-          JSX -> https://www.youtube.com/watch?v=7fPXI_MnBOY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=8
+K6-2          JSX -> https://www.youtube.com/watch?v=7fPXI_MnBOY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=8
 ##########################################################################################################
 Archivo: Hello.js
 JSX Javascript xml
@@ -54,7 +54,7 @@ JSX no se requiere para escribir aplicaciones react
 jsx es transpilado a js
 
 ##########################################################################################################
-          Props -> https://www.youtube.com/watch?v=7fPXI_MnBOY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=9
+K6-3          Props -> https://www.youtube.com/watch?v=7fPXI_MnBOY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=9
 ##########################################################################################################
 Archivo: Greet.js
 Para cachar el property es props.name
@@ -68,7 +68,7 @@ Archivo: Welcome.js
 En class components se manejan como properties en class invocation, ver que se usa this.props.name
 
 ##########################################################################################################
-          Component State -> https://www.youtube.com/watch?v=4ORZ1GmjaMc&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=10
+K6-4          Component State -> https://www.youtube.com/watch?v=4ORZ1GmjaMc&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=10
 ##########################################################################################################
 Archivo: Message.js
 Props vs State
@@ -84,7 +84,7 @@ useState hook -> Functional Components
 this.state    -> Class Components  (versiones viejitas de react)
 
 ##########################################################################################################
-          setState -> https://www.youtube.com/watch?v=4ORZ1GmjaMc&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=11
+K7          setState -> https://www.youtube.com/watch?v=4ORZ1GmjaMc&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=11
 ##########################################################################################################
 Archivo: Counter.js
 Se verán los Do's and Dont's

@@ -33,7 +33,7 @@ Components:
 package.json (si se usara yarn se vería yarn-lock)
 - Contiene dependencias y scripts
 
-El archivo de /public/manifest.json se hace uso para Progressive Web Apps (al igual que registerServiceWorker.js se usa para SPA)
+El archivo de /public/manifest.json se hace uso para Progressive Web Apps (registerServiceWorker.js se usa para PWA)
 /public/index.html es el unico html que existe en el proyecto (ya que trabaja con Single Page Application y la entrada es el tag de div con id="root")
 index.js es quien hace la inyección de los cambios en el DOM
 
