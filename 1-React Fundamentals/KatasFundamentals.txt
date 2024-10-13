@@ -63,4 +63,12 @@ K6-4
 #######################################
                 Kata7
 #######################################
-Pendiente
+1.- Que es lo que puede recibir como parametro this.setState (2 alternativas). Cual es la manera correcta si se quiere manipular el estado con respecto a un estado anterior
+2.- Cuales son los dos parametros del callback function de un setState
+3.- Cuales son los dos parametros que puede recibir this.setState
+4.- Que pasa cuando se invoca setState a la UI
+5.- Tener un class component en el que con manejo de estado incremente un numero en la UI y que despliegue su valor en devtools
+=> Hacer las dos alternativas del punto 1
+6.- Cual es la manera incorrecta de manipular el estado? [K7-6]
+7.- Cual es el unico lugar para asignar un valor al estado? (usando =)
+8.- que se tiene que hacer para que se pueda hacer uso de <button onClick={this.incrementFive}>

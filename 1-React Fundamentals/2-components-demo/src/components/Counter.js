@@ -21,7 +21,7 @@ class Counter extends Component {
     }));
   }
 
-  
+  //Ver que setState puede recibir un callback function ó un objeto y un callback function
 
   asyncIncrementCorrect() {
     this.setState(
@@ -57,7 +57,7 @@ class Counter extends Component {
     /* Don't #2 */
     //si se incrementa el estado directamente no se vera reflejado en la UI (pero si en consola)
     //por lo que el incremento se tiene que hacer a traves de this.setState
-    this.state.count = this.state.count + 1;
+    this.state.count = this.state.count + 1;      //[K7-6]
     //IMPORTANTE -> El unico lugar para modificar this.state es en el constructor
     console.log(this.state.count);
   }
@@ -78,7 +78,21 @@ class Counter extends Component {
         <div>Count - {this.state.count}</div>
         {/* DO'S */}
         <button onClick={() => this.incrementFive()}>Increment five</button>
-        {/* Dar click mostrará correctamente en UI y en consola */}
+        {/* Dar click mostrará correctamente en UI y en consola 
+        
+        En lugar de usar  <button onClick={() => this.incrementFive()}>
+        y poder usar      <button onClick={this.incrementFive}> ... ver que aqui no se le pasa ningun parámetro
+        se tiene que poner esto en el constructor
+        this.incrementFive = this.incrementFive.bind(this);
+
+        Usar una función flecha (increment = () => { ... }) es una alternativa que evita la necesidad de bind
+
+        => this.incremente se refiere a una propiedad de la propia clase y el .bind(this) se refiere a la instancia del objeto que utilizará dicha funcion. 
+        
+        this.increment se refiere a una propiedad de la clase (en este caso, un método de la clase).
+        .bind(this) asegura que this dentro de increment apunte a la instancia específica del objeto que está usando esa función, es decir, al componente actual de React.
+        
+        */}
         <button onClick={() => this.asyncIncrementCorrect()}>Async - console</button>
         
         <br />
