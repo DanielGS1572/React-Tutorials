@@ -64,8 +64,8 @@ K6-4
                 Kata7
 #######################################
 1.- Que es lo que puede recibir como parametro this.setState (2 alternativas). Cual es la manera correcta si se quiere manipular el estado con respecto a un estado anterior
-2.- Cuales son los dos parametros del callback function de un setState
-3.- Cuales son los dos parametros que puede recibir this.setState
+2.- Cuales son los dos parametros del callback function de un setState (el callback function que se recibe como primer parametro)
+3.- Cuales son los dos parametros que puede recibir this.setState (donde el segundo parametro es el mismo cuando se recibe un CF o un objeto)
 4.- Que pasa cuando se invoca setState a la UI
 5.- Tener un class component en el que con manejo de estado incremente un numero en la UI y que despliegue su valor en devtools
 => Hacer las dos alternativas del punto 1
