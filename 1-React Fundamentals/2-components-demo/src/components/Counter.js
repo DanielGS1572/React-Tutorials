@@ -80,6 +80,7 @@ class Counter extends Component {
         <button onClick={() => this.incrementFive()}>Increment five</button>
         {/* Dar click mostrará correctamente en UI y en consola 
         
+        [XX]
         En lugar de usar  <button onClick={() => this.incrementFive()}>
         y poder usar      <button onClick={this.incrementFive}> ... ver que aqui no se le pasa ningun parámetro
         se tiene que poner esto en el constructor

@@ -97,7 +97,7 @@ Dont's
 - Nunca modificar el state de forma directa - Solo cuando se inicializa en el constructor (usar setState)
 
 ##########################################################################################################
-      Destructuring props and state -> https://www.youtube.com/watch?v=5_PdMS9CLLI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=12
+K8      Destructuring props and state -> https://www.youtube.com/watch?v=5_PdMS9CLLI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=12
 ##########################################################################################################
 Archivo: Greet2 y Welcome2
 *Tomar en cuenta que en class component (Welcome2), los props se hace destructuring dentro del metodo de render
@@ -123,7 +123,7 @@ class App extends Component {
     return (
       <div className="App">
         <br />
-        <Welcome2 name="Bruce" heroName="Batman" />
+        <ClassClick />
 
         {/* <Hello />
         <Greet name="Bruce" heroName="Batman">
