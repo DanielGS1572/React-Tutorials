@@ -1,6 +1,7 @@
 #######################################
                 Kata1
 #######################################
+https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
 Fuente: 1-hello-world > src > App.js
 1.- Que es package runner?
 2.- Cuales son las dos formas de crear un proyecto de react?
@@ -27,7 +28,8 @@ Fuente: 1-hello-world > src > App.js
 
 
 #######################################
-                Kata4
+                Kata4       
+https://www.youtube.com/watch?v=Cla1WwguArA&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=5
 #######################################
 Fuente: 2-components-demo > src > App.js
 Archivo: /src/components/Greet.js
@@ -38,16 +40,20 @@ Archivo: /src/components/Greet.js
 
 #######################################
                 Kata5
+https://www.youtube.com/watch?v=lnV34uLEzis&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=6
 #######################################
 Fuente: 2-components-demo > src > App.js
 Archivo: /src/components/Welcome.js
+- Basicamente como se construye un Component
 - De los dos tipos de componentes, cual es el que manejaba estados (antes de hooks)
 - Cual de los dos tipos de componentes no hace uso de 'this'
 - Hacer un class component extendiendo de Component (que es lo que se tiene que implementar)
 
 #######################################
                 Kata6
+https://www.youtube.com/watch?v=oecI26cWqzk&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=7
 #######################################
+Fuente: 2-components-demo > src > App.js
 K6-1
 1.- A partir de que versión se introdujó los hooks y en cual de los dos tipos de componentes se puede usar
 2.- 2 conceptos importantes a entender antes de la introducción de hooks

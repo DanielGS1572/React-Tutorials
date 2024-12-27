@@ -1,4 +1,6 @@
 import React, { Component } from 'react'    
+//Basicamente son clases de ES6 y usan internamente estado (Class component)
+
 //Se tienen que importar dos componentes, extender de components, implementar el metodo render que puede retornar null o JSX
 
 class Welcome extends Component {
