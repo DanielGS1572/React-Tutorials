@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 
 class Welcome2 extends Component {
   render() {
-    const {name,heroName} = this.props;
+    const {name,heroName} = this.props;   //destructurar va dentro del metodo de render
+    const {state1, state2} = this.state   //también se puede destructurar el state
     return <h1>Welcome {name} a.k.a {heroName}</h1>   
     //props es palabra reservada para class components
     //props es inmutable, es decir su valor no puede cambiar

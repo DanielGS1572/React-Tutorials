@@ -1,5 +1,8 @@
 PENDIENTE
+Considerar: https://www.youtube.com/shorts/ecl-eCbYFPM
 VIDEO 9 => https://www.youtube.com/watch?v=m7OWXtbiXX8&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=9
+VIDEO 12 => https://www.youtube.com/watch?v=5_PdMS9CLLI&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=12
+VIDEO 14 => https://www.youtube.com/watch?v=kVWpBtRjkCk&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=14
 #######################################
                 Kata1
 #######################################
@@ -101,6 +104,8 @@ https://www.youtube.com/watch?v=uirRaVjRsf4&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rx
 #######################################
                 Kata8
 #######################################
+2-components-demo > src > Greet2.js         Component component
+2-components-demo > src > Welcome2.js       Class Component
 1.- Donde se hace destructuring en un class component
 2.- Hacer destructuring de un class component que tenga un boton que llame a otro metodo y que el llamado de dicho metodo imprima en consola valores de props que se le han pasado
 3.- Que haría que se haga re-render del componente?
@@ -108,9 +113,11 @@ https://www.youtube.com/watch?v=uirRaVjRsf4&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rx
 
 
 #######################################
-                Kata9
+                Kata9 (Events)
 #######################################
-Fuente: Counter.js [XX] 
+Fuente: 
+2-components-demo > src > FunctionClick.js      Functional Component
+2-components-demo > src > ClassClick.js         Class Component
 - porque se tuvo que hacer bind para que se pueda hacer uso de this.function en el onClick del botón
 1.- Crear un Function component que despliegue texto con console.log con el click de un boton
 2.- Crear un Class Component que reciba props que inicialice un estado para que incremente con el click de un boton y despliegue en consola
