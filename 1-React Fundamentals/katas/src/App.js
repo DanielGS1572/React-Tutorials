@@ -1,8 +1,7 @@
 import React from 'react';
-import Counter from './Components/Counter';
-import Counter2 from './Components/Counter2';
+import K5 from './Components/K5'
 function App(){
-    return (<div>Hello World <br/> <Counter></Counter> <br/> <Counter2></Counter2></div>)
+    return (<K5 name='myname'/>)
 }
 
 export default App;

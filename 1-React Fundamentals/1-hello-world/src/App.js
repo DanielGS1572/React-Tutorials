@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 /*
 ##########################################################################################################
-          Hello world -> https://www.youtube.com/watch?v=9VIiLJL0H4Y&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=2
+Kata1          Hello world -> https://www.youtube.com/watch?v=9VIiLJL0H4Y&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=2
 ##########################################################################################################
 React es una librería crea un component base application
 
@@ -24,6 +24,11 @@ create-react-app <project-name>     ... una desventaja es que se tiene que actua
 npm start
 si se descargó, primero sería npm install
 
+3.- vite
+npm create vite@latest projectName
+npm install
+npm run dev 
+
 React es una libreria que se basa en componentes
 
 Components:
@@ -32,7 +37,7 @@ Components:
 
 
 ##########################################################################################################
-          Folder structure -> https://www.youtube.com/watch?v=9VIiLJL0H4Y&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=3
+Kata2          Folder structure -> https://www.youtube.com/watch?v=9VIiLJL0H4Y&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=3
 ##########################################################################################################
 package.json (si se usara yarn se vería yarn-lock, en cambio se llama package-lock.json)
 - Contiene dependencias y scripts

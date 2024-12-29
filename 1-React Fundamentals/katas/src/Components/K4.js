@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export class MyClass extends Component{
-    render(){
-        return <div>ok {this.props.name}</div>
-    }
-}
+export const Greet = props => {
+    console.log("hello");
+    return (<div>Heelloo {props.name} {props.children}</div>)
+};
+

@@ -15,9 +15,10 @@ class Counter extends Component {
 ########################################################################################
 */
   increment() {
-    this.setState((prevState, props) => ({     //[A] - ademas el segundo parametro es el props object
+    this.setState((prevState, props) => ({     //[A] [X] - ademas el segundo parametro es el props object
       //usar setState react hara re-render del componente
-      count: prevState.count + 1,     //ver que no se usa this.state.count sino prevstate.count
+      count: prevState.count + 1,     //ver que no se usa this.state.count sino prevstate.count [Z]
+      
     }));
   }
 
@@ -25,14 +26,15 @@ class Counter extends Component {
 
   asyncIncrementCorrect() {
     this.setState(
-      { count: this.state.count + 1 },                        //ver que se le pasa un objeto
+      { count: this.state.count + 1 },                        //ver que se le pasa un objeto con el current state, pero Ver tambien que se le puede pasar un callback function con el previous state ([X]-origen)
       () => {
       console.log("Callback", this.state.count);              
-    });//PARA TRABAJAR LA ASINCRONÍA DE LE PASA UN CALLBACK COMO SEGUNDO PARAMETRO
+    });//PARA TRABAJAR LA ASINCRONÍA SE LE PASA UN CALLBACK COMO SEGUNDO PARAMETRO
+    
   }
   
   incrementFive() {
-    console.log("Inside incrementFive");
+    console.log("Inside incrementFive");    //Hace el incremento correctamente porque se esta trabajando con un estado previo [Z] [X]
     this.increment();
     this.increment();
     this.increment();
@@ -48,9 +50,11 @@ class Counter extends Component {
     /* Don't #1 */
     this.setState({
       count: this.state.count + 1,
-    });
+    }/*,()=>{}*/);    //Se le tiene que pasar un callback function
+
     /*Hacer el seteo de un estado es asyncrono, por lo que si se setea y luego se hace console.log, lo que muestre estará desfasado */
     console.log("Callback", this.state.count); //es llamado antes de que se ha seteado el estado
+    //"calls to setState son asyncronos" si se despliega en consola usando this.state.coun mostrará el dato anterior
   }
 
   incrementWrong() {
@@ -63,7 +67,7 @@ class Counter extends Component {
   }
   incrementFiveIncorrectly() {
     console.log("Inside incrementFive Incorrectly");
-    this.asyncIncrementCorrect();   //Ver que a pesar que se esta llamanda una forma correcta, no lo hace bien
+    this.asyncIncrementCorrect();   //Ver que a pesar que se esta llamanda una forma correcta, no lo hace bien pues no esta usando un status previo
     this.asyncIncrementCorrect();
     this.asyncIncrementCorrect();
     this.asyncIncrementCorrect();
@@ -94,7 +98,10 @@ class Counter extends Component {
         .bind(this) asegura que this dentro de increment apunte a la instancia específica del objeto que está usando esa función, es decir, al componente actual de React.
         
         */}
+
+
         <button onClick={() => this.asyncIncrementCorrect()}>Async - console</button>
+        {/*Ver que para que imprima en consola correctamente se le pasa una función y no directamente un console.log (esto es para trabajar con la asincronia) */}
         
         <br />
 
@@ -105,6 +112,9 @@ class Counter extends Component {
         <button onClick={() => this.incrementWrong()}>Direct state</button>
         {/* Don't #2 - No hacer nada fuera de la función de setState ya que es asincrono */}
         {/* Dar click y ver que se incrementa en UI pero no en consola (1 valor abajo) */}
+        {/*Abrir la consola y dar click en el boton, se podrá ver que si se incrementa en consola pero no en UI, volver a dar más clicks
+        Esto significa que en la UI no se esta haciendo re-rendering */}
+
         <button onClick={() => this.asyncIncrementWrong()}>Asynchronous</button>
         {/* Don't #3 - No hacer referencia al estado anterior en el que se encontraba, en lugar de pasar un objeto, se pasa una función a setState [A] */}
         {/* Dar click y ver que despliega 5 veces la misma información y no incrementa en 5 */}

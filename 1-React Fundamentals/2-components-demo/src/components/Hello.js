@@ -29,9 +29,9 @@ export default Hello
 /*
 JSX DIFFERENCES:
 class -> className ... se planea que después se use class (react 18)
-for   -> htmlFor
+for   -> htmlFor    ... for tambien es palabra reservada para JS
 
-CamelCase property naming convention
+CamelCase property naming convention (html attributes names)
 onclick   -> onClick
 tabindex  -> tabIndex
 

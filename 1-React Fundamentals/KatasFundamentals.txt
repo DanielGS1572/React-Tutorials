@@ -1,10 +1,12 @@
+PENDIENTE
+VIDEO 9 => https://www.youtube.com/watch?v=m7OWXtbiXX8&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=9
 #######################################
                 Kata1
 #######################################
 https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
 Fuente: 1-hello-world > src > App.js
 1.- Que es package runner?
-2.- Cuales son las dos formas de crear un proyecto de react?
+2.- Cuales son las tres formas de crear un proyecto de react?
 3.- Pasos para ejecutar el proyecto (cuando se crea de 0, cuando se descarga de otro proyecto)
 4.- Que es React
 5.- Caracteristicas de un componente
@@ -50,34 +52,51 @@ Archivo: /src/components/Welcome.js
 - Hacer un class component extendiendo de Component (que es lo que se tiene que implementar)
 
 #######################################
-                Kata6
+                Kata6 [Hooks update]
 https://www.youtube.com/watch?v=oecI26cWqzk&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=7
 #######################################
-Fuente: 2-components-demo > src > App.js
+Fuente: 2-components-demo > src > App.js [K6-#]
 K6-1
 1.- A partir de que versión se introdujó los hooks y en cual de los dos tipos de componentes se puede usar
 2.- 2 conceptos importantes a entender antes de la introducción de hooks
-K6-2
+K6-2    => https://www.youtube.com/watch?v=7fPXI_MnBOY&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=8
 1.- Que significa JSX y escribir un componente que no use JSX 
-2.- Que sucede al trabajar con JSX, es requerido trabajar con JSX en react?
+1A.- Setear propiedades sin usar JSX y setear la clase, replicar el error que muestra en consola y porque sucede esto?
+    => C:\Users\Usuario\Documents\Repositorios\React-Tutorials\1-React Fundamentals\2-components-demo\src\components\Hello.js
+2.- Que sucede al trabajar con JSX con respecto a JS, es requerido trabajar con JSX en react?
+3.- JSX es syntactic sugar de que? Por eso es la razon de que se importa React
 K6-3
 1.- Contrastar como se trabaja con props en class y functional components
 K6-4
 1.- Contrastar dos caracteristicas de props y state
 2.- como se trabaja con el state con Hooks y como se trabajaba el estado en versiones viejas en un class component
-
 #######################################
-                Kata7
+                Kata7-A
+Props https://www.youtube.com/watch?v=m7OWXtbiXX8&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=10
 #######################################
+Fuente:
+2-components-demo > src > Welcome.js
+2-components-demo > src > Greet.js
+2-components-demo > src > Message.js Para ver como trabaja el estado en un class component
+0.- En un component cuanto elementos puede retornar? Solo un elemento por lo que si se tienen varios tags html se pueden englobar en un div
 1.- Que es lo que puede recibir como parametro this.setState (2 alternativas). Cual es la manera correcta si se quiere manipular el estado con respecto a un estado anterior
 2.- Cuales son los dos parametros del callback function de un setState (el callback function que se recibe como primer parametro)
 3.- Cuales son los dos parametros que puede recibir this.setState (donde el segundo parametro es el mismo cuando se recibe un CF o un objeto)
 4.- Que pasa cuando se invoca setState a la UI
 5.- Tener un class component en el que con manejo de estado incremente un numero en la UI y que despliegue su valor en devtools
-=> Hacer las dos alternativas del punto 1
-6.- Cual es la manera incorrecta de manipular el estado? [K7-6]
-7.- Cual es el unico lugar para asignar un valor al estado? (usando =)
-8.- que se tiene que hacer para que se pueda hacer uso de <button onClick={this.incrementFive}>
+
+#######################################
+                Kata7-B
+https://www.youtube.com/watch?v=uirRaVjRsf4&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=11
+#######################################
+2-components-demo > src > App.js [K7]
+2-components-demo > src > Counter.js
+=> Hacer las dos alternativas del punto 1 de Kata7-A
+1-components-demo > src > Counter.js
+2.- Cual es la manera incorrecta de manipular el estado? [K7-6]
+3.- Cual es el unico lugar para asignar un valor al estado? (usando =)
+4.- que se tiene que hacer para que se pueda hacer uso de <button onClick={this.incrementFive}>
+5.- Cuales son dos caracteristicas de state?
 
 #######################################
                 Kata8

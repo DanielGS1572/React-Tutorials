@@ -27,3 +27,9 @@ class Message extends Component {
 }
 
 export default Message
+
+/*
+K7-9
+- "state is handled in the component"
+- "state can manipulate what is rendered in the browser"
+*/
